@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+</head>
+
+<body>
+
+	<div th:fragment="navbar" class="container">
+		<header class="d-flex justify-content-center py-3">
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a th:href="@{/}" class="nav-link active" aria-current="page">Home</a></li>
+				<li class="nav-item"><a th:href="@{/autor/listar}" class="nav-link">Autores</a></li>
+				<li class="nav-item"><a th:href="@{/editorial/listar}" class="nav-link">Editoriales</a></li>
+				<li class="nav-item"><a th:href="@{/libro/listar}" class="nav-link">Libros</a></li>
+				<li class="nav-item"><a th:href="@{/cliente/listar}" class="nav-link">Clientes</a></li>
+				<li class="nav-item"><a th:href="@{/prestamo/listar}" class="nav-link">Préstamos</a></li>
+			</ul>
+		</header>
+	</div>
+
+</body>
+
+</html>
